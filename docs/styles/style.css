@@ -45,11 +45,3 @@
     padding: 1em;
     color: #666666;
 }
-
-@media (min-width: 700px) {
-    .wrapper {
-        grid-template-areas: 
-          "hd hd hd   hd   hd   hd   hd   hd hd"
-          "sd sd main main main main main ft ft";
-    }
-}
