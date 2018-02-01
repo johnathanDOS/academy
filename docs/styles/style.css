@@ -46,7 +46,7 @@
     color: #666666;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
     .wrapper {
         grid-template-areas: 
           "hd hd hd   hd   hd   hd   hd   hd hd"
