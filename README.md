@@ -1,1 +1,1 @@
-# gemiini_academy
+Mock-up for gemiini academy
