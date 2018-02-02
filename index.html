@@ -9,9 +9,9 @@
 
     <body>
       <div class="container">
-      <header role="banner">
-        <h1>Header</h1>
-        <a class="toggle open" href="#sidebar">toggle sidebar</a>
+      <header id="header" role="banner">
+        <h1>Gemiini Academy</h1>
+        <a class="toggle open" href="#sidebar">></a>
         <a class="toggle open" href="#nav">toggle nav</a>
       </header>
 
@@ -19,18 +19,18 @@
         <a class="toggle close" href="#">X</a>
         <ul>
           <li>
-            <a href="#">Item 1</a>
+            <strong>Home</strong>
           </li>
-           <li>
-            <a href="#">Item 2</a>
-          </li>
-          <li>
-            <a href="#">Item 3</a>
-          </li>
-        </ul>
+            <li>
+              <a href="./docs/main.html">Gemiini Guides</a>
+            </li>
+             <li>
+              <a href="./resources/main.html">Additional Resources</a>
+            </li>
+          </ul>
       </nav>
 
-      <sidebar id="sidebar" role="navigation">
+      <sidebar id="sidebar" role="navigation" style="display: none">
         <a class="toggle close" href="#">X</a>
           <ul>
             <li>
@@ -45,14 +45,20 @@
           </ul>
       </sidebar>
 
-      <section role="main">
-        <article>
-          <h2>Main</h2>
-            <p>Curabitur orci lacus, auctor ut facilisis nec, ultricies quis nibh. Phasellus id diam sollicitudin, malesuada turpis id, gravida erat. Maecenas placerat elit vel hendrerit convallis. Sed in mauris ut justo vulputate viverra feugiat ac dui. Fusce feugiat arcu in vehicula vehicula. Donec varius justo at nulla aliquet volutpat.</p> 
-            <p>Ut id rutrum eros. Nulla tristique, magna et mattis vulputate, mi eros suscipit turpis, nec bibendum turpis nunc feugiat sapien. Nunc arcu est, lacinia id diam quis, sagittis euismod neque. Nullam fringilla velit sed porta gravida. Proin eu vulputate libero. Ut a lacinia enim. Etiam venenatis mauris et orci tempor congue. Sed tempor eros et ultricies congue. Aenean sed efficitur orci. Nulla vel tempus mi.</p>
-            <p>Ut cursus suscipit augue, id sagittis nibh faucibus eget. Etiam suscipit ipsum eu augue ultricies, at rhoncus mi faucibus. In et tellus vitae leo scelerisque fringilla nec at nunc.</p>
-        </article>
+      <section class="content" role="main">
+        <h2>Welcome!</h2>
+        <section class="buttons" role="navigation">
+          <a href="./docs/main.html" class="button">Getting Started and Gemiini Guides</a>
+          <a href="https://learn.gemiini.org/authority/help/contact" class="button">Contact Us</a>
+          <a href="https://learn.gemiini.org/authority/help/schedule" class="button">Schedule a Call with a Product Specialist</a>
+          <a href="./resources/main.html" class="button">Additional Resources</a>
+        </section>
       </section>
+
+      <footer id="footer" role="footer">
+        <a href="https://gemiini.org/#/get-started">gemiini.org</a>
+      </footer>
+      
       </div>
     </body>
 
