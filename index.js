@@ -8,6 +8,6 @@ server({
     password: process.env.PASSWORD,
     port: 1234,
     realm: 'Private',
-    root: './',
+    root: './index.html',
     username: process.env.USERNAME
 })
