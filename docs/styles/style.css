@@ -5,19 +5,19 @@
 }
 
 .container > * {
-    color: #353535;
+    color: #0088cc;
     font-size: 1.2em;
     line-height: 1.5;
     padding: 20px;
-    background: #d0cfc5;
+    background: #white;
 }
 
 .container sidebar {
-    background: #136fd2;
+    background: #eff4fa;
 }
 
 .container nav {
-    background: #136fd2;
+    background: #eff4fa;
 }
 
 nav ul {
@@ -27,7 +27,7 @@ nav ul {
 }
 
 nav a {
-    color: #d0cfc5;
+    color: #1d2e36;
 }
 
 nav a:hover {
@@ -41,7 +41,7 @@ sidebar ul {
 }
 
 sidebar a {
-    color: #d0cfc5;
+    color: #1d2e36;
 }
 
 sidebar a:hover {
@@ -114,4 +114,8 @@ sidebar a:hover {
         top: -10px;
     }
 
+}
+
+body {
+    font-family: "Verdana"
 }
