@@ -1,47 +1,117 @@
-.header {
-    grid-area: hd;
-}
-.nav {
-    grid-area: nav;
-}
-.footer {
-    grid-area: ft;
-}
-.content {
-    grid-area: main;
-}
-.sidebar {
-    grid-area: sd;
-}
-
-.title {
-
-}
-
-.wrapper {
+.container {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: 
-      "hd hd hd hd   hd   hd   hd   hd   hd"
-      "nav nav nav nav nav nav nav nav nav"
-      "sd sd main main main main main main main"
-      "sd sd main main main main main main main"
-}
-* {box-sizing: border-box;}
-
-.wrapper {
-    border: 2px solid blue;
-    border-radius: 5px;
-    background-color: white;
-    max-width: 1920px;
-    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
 }
 
-.wrapper > div {
-    border: 2px solid #000000;
-    border-radius: 5px;
-    background-color: #eeeeee;
-    padding: 1em;
-    color: #666666;
+.container > * {
+    color: #353535;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 20px;
+    background: #d0cfc5;
+}
+
+.container sidebar {
+    background: #136fd2;
+}
+
+.container nav {
+    background: #136fd2;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #d0cfc5;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+sidebar a {
+    color: #d0cfc5;
+}
+
+sidebar a:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    /* grid */
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* specific item styles */
+    .container header,
+    .container nav {
+        grid-column: span 4;
+    }
+    .container sidebar {
+        grid-column: span 1;
+    }
+    .container section {
+        grid-column: span 3;
+    }
+
+    /* nav styles */
+    nav ul li {
+        display: inline-block;
+        padding: 0 20px 0 0;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+
+    #nav {
+        position: fixed;
+        top: -340px;
+        bottom: auto;
+        right: 0px;
+        transition: transform .3s ease-in-out;
+
+    }
+    #sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        left: -340px;
+        transition: transform .3s ease-in-out;
+    }
+
+    #sidebar:target {
+        transform: translateX(340px);
+    }
+
+    #nav:target {
+        transform: translateY(340px);
+    }
+
+    .close {
+        text-align: right;
+        display: block;
+        text-decoration: none;
+        font-size: 1em;
+        position: relative;
+        top: -10px;
+    }
+
 }
