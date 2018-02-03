@@ -93,7 +93,7 @@ sidebar a:hover {
 sidebar {
     overflow-y: scroll;
     height: 100vh;
-    min-width: 200px;
+    min-width: 300px;
     margin-bottom: 50px;
 
 }
@@ -203,3 +203,19 @@ sidebar ul ul ul li {
     margin-left: 20px;
     font-size: 16px; 
 }
+
+.collapsibleList li{
+    list-style-image : url('button.png');
+    cursor           : auto;
+  }
+  
+  li.collapsibleListOpen{
+    list-style-image : url('../images/button-open.png');
+    cursor           : pointer;
+  }
+  
+  li.collapsibleListClosed{
+    list-style-image : url('../images/button-closed.png');
+    list-style
+    cursor           : pointer;
+  }
