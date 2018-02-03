@@ -1,1 +1,0 @@
-Mock-up for gemiini academy
