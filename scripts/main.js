@@ -17,7 +17,8 @@ document.getElementById("content-wrapper").addEventListener('scroll', function (
     for (var i = 0; i < chapHeaders.length; i ++) {
         if (isInViewport(chapHeaders[i])) {
             console.log(chapHeaders[i].id);
-            document.getElementById(chapHeaders[i].id + "-toc").style = "background-color: #708090";
+            document.getElementById(chapHeaders[i].id + "-toc").style = 
+                "background-color: #708090; border-left: 6px solid #0c2856";
         } else if (!isInViewport(chapHeaders[i])) {
             document.getElementById(chapHeaders[i].id + "-toc").style = "background-color: null;";
         }
