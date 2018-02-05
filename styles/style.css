@@ -119,6 +119,8 @@ sidebar a:hover {
     .content {
         grid-column: span 4;
         margin-bottom: 30px;
+        overflow-y: scroll;
+        height: 69vh;
     }
 
     /* nav styles */
@@ -129,12 +131,6 @@ sidebar a:hover {
 
     .toggle {
         display: none;
-    }
-
-    .content {
-        overflow-y: scroll;
-        height: 71vh;
-        margin-bottom: 50px;
     }
 
     sidebar {
@@ -257,6 +253,12 @@ sidebar ul ul ul li {
     position: fixed;
     top: 50vh;
     left: 0px;
-    z-index: 950;
+}
+
+#close-sidebar-phone {
+    width: 20px;
+    position: relative;
+    top: 50vh;
+    right: -20px;
 }
 
