@@ -9,18 +9,18 @@ var isInViewport = function (elem) {
 };
 
 var welcome = document.querySelector("#welcome");
-var chapHeaders = document.querySelectorAll("article > div.chap-header")
-console.log(chapHeaders)
+var chapters = document.querySelectorAll("article > div.chapter-container")
+console.log(chapters)
 
 
 document.getElementById("content-wrapper").addEventListener('scroll', function (event) {
-    for (var i = 0; i < chapHeaders.length; i ++) {
-        if (isInViewport(chapHeaders[i])) {
-            console.log(chapHeaders[i].id);
-            document.getElementById(chapHeaders[i].id + "-toc").style = 
-                "background-color: #708090; border-left: 6px solid #0c2856";
-        } else if (!isInViewport(chapHeaders[i])) {
-            document.getElementById(chapHeaders[i].id + "-toc").style = "background-color: null;";
+    for (var i = 0; i < chapters.length; i ++) {
+        if (isInViewport(chapters[i])) {
+            console.log(chapters[i].id);
+            document.getElementById(chapters[i].id + "-toc").style = 
+            "background-color: #9aa6b1; border-left: 6px solid #0c2856; border-bottom: 1px solid #0c2856; border-right: 1px solid #0c2856; border-top: 1px solid #0c2856;"; 
+        } else if (!isInViewport(chapters[i])) {
+            document.getElementById(chapters[i].id + "-toc").style = "background-color: null;";
         }
     }
 })
