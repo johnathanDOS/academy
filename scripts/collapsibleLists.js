@@ -74,9 +74,9 @@ const CollapsibleLists = (function(){
       li = li.parentNode;
     }
 
-    if (li === node){
+    if (li === node && e.target.tagName.toLowerCase() != "a") {
       toggle(node);
-    }
+        }
 
   }
 
