@@ -90,13 +90,8 @@ sidebar a:hover {
     text-decoration: none;
 }
 
-sidebar {
-    overflow-y: scroll;
-    height: 100vh;
-    min-width: 300px;
-    margin-bottom: 50px;
 
-}
+
 @media only screen and (min-width: 600px) {
     
     /* grid */
@@ -135,6 +130,20 @@ sidebar {
     .toggle {
         display: none;
     }
+
+    .content {
+        overflow-y: scroll;
+        height: 71vh;
+        margin-bottom: 50px;
+    }
+
+    sidebar {
+        overflow-y: scroll;
+        height: 69vh;
+        min-width: 300px;
+        margin-bottom: 50px;
+    }
+    
 }
 
 @media only screen and (max-width: 599px) {
@@ -205,17 +214,24 @@ sidebar ul ul ul li {
 }
 
 .collapsibleList li{
+    background-repeat: no-repeat;
     list-style-image : url('button.png');
     cursor           : auto;
+    padding-bottom: 7px;
   }
   
   li.collapsibleListOpen{
-    list-style-image : url('../images/button-open.png');
+    background: url('../images/button-open.png') no-repeat left top;
+    background-position-y: 7px;
+    list-style: none;
+    padding-left: 20px;
     cursor           : pointer;
   }
   
   li.collapsibleListClosed{
-    list-style-image : url('../images/button-closed.png');
-    list-style
+    list-style: none;
+    background : url('../images/button-closed.png') no-repeat left top;
+    background-position-y: 7px;
+    padding-left: 20px;
     cursor           : pointer;
   }
