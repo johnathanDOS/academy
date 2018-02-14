@@ -1,1 +1,1 @@
-Mock-up for gemiini academy
+Practice designing technical documentation.
